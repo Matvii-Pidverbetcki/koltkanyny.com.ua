@@ -1,0 +1,16 @@
+{
+  "name": "kolomyiski-tkanyny",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Інтернет-магазин «Коломийські тканини» (Node.js + SQLite, без зовнішніх залежностей)",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "create-admin": "node scripts/create-admin.js",
+    "seed:demo": "node scripts/seed-demo.js",
+    "unseed:demo": "node scripts/seed-demo.js --remove",
+    "backup": "node scripts/backup.js",
+    "test": "node --test \"test/*.test.js\""
+  }
+}
